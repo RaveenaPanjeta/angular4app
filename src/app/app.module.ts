@@ -6,18 +6,13 @@ import { LazyLoadImagesModule } from 'ngx-lazy-load-images';
 
 // Components
 import { AppComponent } from './app/app.component';
-import { HomeComponent } from "./components/home/home.component";
 import { LoginComponent } from "./components/login/login.component";
-
-//services
-import { HomeService } from "./services/home.service";
 
 // Routing Modules
 import { AppRoutingModule } from './routing/app-routing.module';
 
 @NgModule({
   declarations: [
-    HomeComponent,
     LoginComponent,
     AppComponent
   ],
@@ -28,7 +23,6 @@ import { AppRoutingModule } from './routing/app-routing.module';
     LazyLoadImagesModule
   ],
   providers: [
-    HomeService
   ],
   bootstrap: [AppComponent]
 })
