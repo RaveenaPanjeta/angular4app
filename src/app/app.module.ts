@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { LazyLoadImagesModule } from 'ngx-lazy-load-images';
-
+import { HttpModule } from '@angular/http';
 // Components
 import { AppComponent } from './app/app.component';
 import { LoginComponent } from "./components/login/login.component";
@@ -20,9 +20,11 @@ import { AppRoutingModule } from './routing/app-routing.module';
     BrowserModule,
     FormsModule,
     AppRoutingModule,
-    LazyLoadImagesModule
+    LazyLoadImagesModule,
+    HttpModule
   ],
   providers: [
+  
   ],
   bootstrap: [AppComponent]
 })
